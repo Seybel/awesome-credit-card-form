@@ -1,4 +1,4 @@
-# vue-interactive-card
+# awesome-credit-card-form
 
 ## Project setup
 ```
