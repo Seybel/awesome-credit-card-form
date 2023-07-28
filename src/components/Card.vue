@@ -23,8 +23,7 @@
           <div class="card-item__type">
             <transition name="slide-fade-up">
               <img
-                :src="`https://raw.githubusercontent.com/seybel/awesome-credit-card-form/main/src/assets/images/' +
-                  ${cardType}.png`"
+                :src="`https://raw.githubusercontent.com/seybel/awesome-credit-card-form/main/src/assets/images/${cardType}.png`"
                 v-if="cardType"
                 :key="cardType"
                 alt
@@ -138,8 +137,7 @@
         </div>
         <div class="card-item__type">
           <img
-            :src="`https://raw.githubusercontent.com/seybel/awesome-credit-card-form/main/src/assets/images/' +
-              ${cardType}.png`"
+            :src="`https://raw.githubusercontent.com/seybel/awesome-credit-card-form/main/src/assets/images/${cardType}.png`"
             v-if="cardType"
             class="card-item__typeImg"
           />
