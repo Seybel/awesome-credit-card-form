@@ -6,6 +6,7 @@
         :class="{ '-active': focusElementStyle }"
         :style="focusElementStyle"
         ref="focusElement"
+        v-if="currentFocus"
       ></div>
       <div class="card-item__cover">
         <img
