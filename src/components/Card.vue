@@ -151,8 +151,31 @@
 export default {
   name: "CardComp",
   props: {
-    labels: Object,
-    fields: Object,
+    labels: {
+      type: Object,
+      default: () => {
+        return {
+          cardCvv:"",
+          cardMonth:"",
+          cardName:"",
+          cardNumber:"",
+          cardNumberNotMask:"",
+          cardYear: null
+        }
+      }
+    },
+    fields: {
+      type: Object,
+      default: () => {
+        return {
+          cardCvv:"",
+          cardMonth:"",
+          cardName:"",
+          cardNumber:"",
+          cardYear:""
+        }
+      }
+    },
     isCardNumberMasked: Boolean,
     randomBackgrounds: {
       type: Boolean,
